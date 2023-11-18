@@ -16,6 +16,8 @@ a{
 }
 button{
     border: 0;
+    cursor: pointer;
+
 }
 .container{
     max-width:  1180px; 
@@ -161,3 +163,115 @@ text-transform: uppercase;
     line-height: 127.273%; 
     text-transform: uppercase;
 }
+.burgers{
+    margin-top:40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.item-img{
+    width: 380px;
+    height: 430px;
+    object-fit: cover;
+}
+.item-title{
+    color: #1B2A49;
+    font-family: "Nunito Sans";
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 126.667% ; 
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+.item-price{
+    color: #979797;
+    font-family: "Nunito Sans";
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 140%; 
+    margin-bottom: 20px;
+}
+.item-btn{
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    background: #FBB731;
+    padding: 10px 30px;
+    color: #1E2F40;
+    text-align: center;
+    font-family: "Nunito Sans";
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 128.571%; 
+    text-transform: uppercase;
+}
+.item-btn>img{
+    margin-right: 12px;
+}
+.add{
+    margin-top: 50px;
+    margin-bottom: 90px;
+}
+footer{
+    background: #1E2F40;
+    padding-top: 117px;
+    padding-bottom: 106;
+
+}
+.footer{
+    display: flex;
+    justify-content:space-between;
+}
+.footer-title{
+    color: #FFF;
+    font-family: "Nunito Sans";
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 190%; 
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+.nav>li{
+    margin-bottom: 12px;
+}
+.nav>li>a{
+    color: #DEDEDE;
+    font-family: "Open Sans";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 160%; 
+}
+.info-text{
+    color: #DEDEDE;
+    font-family: "Open Sans";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 160%;
+}
+.info-a{
+    color: #FAF9F9;
+    font-family: "Open Sans";
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 160% ;
+    }
+.phone{
+    display: flex;
+     flex-direction: column;
+    }    
+     
+.phone>a{      
+        color: #FBB731;
+        font-family: "Nunito Sans";
+        font-size: 20px;
+        font-weight: 800;
+        line-height: 190%;
+        text-transform: uppercase;
+    }
