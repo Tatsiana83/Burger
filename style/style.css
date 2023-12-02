@@ -17,14 +17,17 @@ a{
 button{
     border: 0;
     cursor: pointer;
-
 }
+body{
+   position: relative;
+}
+
 .container{
     max-width:  1180px; 
     margin: 0 auto;
 }
 .header-top{
-    padding-top:26px 0;
+    padding:26px 0;
 }
 .header-menu{
     display: flex;
@@ -228,6 +231,7 @@ footer{
 .footer{
     display: flex;
     justify-content:space-between;
+    flex-wrap: wrap;
 }
 .footer-title{
     color: #FFF;
@@ -281,6 +285,47 @@ footer{
     .burger-menu{
         display: none;
     }
+    .logo-footer>.phone{
+        display: none;
+    }
+    .menu-burger{
+       display: block;
+        position: absolute;
+        background: #fff8dc;
+        width: 100%;
+        top:0;   
+        padding:40px 0;
+       
+    }
+    .close{
+        width: 22px;
+        height: 22px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    .menu-burger>ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu-burger>ul>li>a{
+        color: #443737;
+        font-family: 'Open Sans';
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 120%;
+    }
+    .menu-burger>ul>li{
+        margin-bottom: 23px;
+        width: 98px;
+        display: flex;
+        justify-content: center;
+    }
+    .menu-burger>ul>li:last-child{
+        margin-bottom: 0;
+    }
+    
     @media (max-width:768px) {
         .container{
             padding: 0 15px;
@@ -358,5 +403,74 @@ footer{
         .header-text{
             font-size: 15px;
         }
+        .baner{
+            padding-top:34px;
+            padding-bottom:34px;
+            padding-left: 15px;
+            padding-right: 28px;
+            background: url('../img/b320.png');
+            background-position-y:-15px;
+            margin-bottom: 50px;
+        }
+        .title{
+            font-size: 27px;
+            line-height: 207.407%;
+        }
+        .burgers{
+            margin-top: 24px;
+        }
+        .item-img{
+            width: 139px;
+            height: 180px;
+            object-fit: cover;
+        }
+        .item-title{
+            font-size: 13px;
+        }
+        .item-price{
+            font-size: 14px;
+        }
+        .item-btn{
+            padding-right: 21.59px;
+            padding-left: 21.59px;
+        }
+        .add{
+            margin-top: 0;
+        }
+        .w768>.item>.item-img{
+            width: 139px;
+            height: 180px;
+            object-fit: cover;   
+        }
+        .w768>.item{
+            margin-right: 6px;
+        }
+        .nav>.phone{
+            display: none;
+        }
+       .logo-footer{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+       } 
+        .logo-footer>.phone{
+            display: flex;
+            margin-top: -8px;
+            margin-bottom: 29px;
+        }
+        .footer-title{
+            font-size: 18px;
+        }
+        .info{
+            margin-top: 33px;
+        }
+        footer{
+            padding-bottom: 60px;
+        }
+        .burgers.w768{
+            overflow: hidden;
+        }
+        
+
     }
 
